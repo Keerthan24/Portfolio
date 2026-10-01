@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keerthan M Rao | Software Developer</title>
+<meta name="description" content="Portfolio of Keerthan M Rao, a Computer Science undergraduate building data-backed applications with Python and SQL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Keerthan M Rao, home">Keerthan<span> M Rao</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 id="hero-title">Keerthan M Rao</h1>
+        <p class="role">Software developer building web and database applications.</p>
+        <p class="lede">I'm a Information  Science graduate who likes SQL, clean data models and Python that does something useful from input to storage. Currently interning at QSpiders in Bengaluru.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="mailto:mraokeerthan66@gmail.com">Email me</a>
+        </div>
+        <p class="quick-facts">
+          <span><strong>Python</strong> and <strong>SQL</strong></span>
+          <span>B.E. Information Science, <strong>CGPA 8.23</strong></span>
+          <span>Based in Davangere, Karnataka</span>
+        </p>
+      </div>
+
+      <!-- A small replay of my attendance project: camera in, face matched, row saved -->
+      <figure class="cam-card" aria-label="Animated demo of the face recognition attendance project">
+        <div class="cam">
+          <div class="cam-meta">
+            <span class="rec"><i></i>CAM 01</span>
+            <span id="clock">09:14:02</span>
+          </div>
+
+          <!-- Silhouette shows while the camera scans; the photo replaces it after the match -->
+          <svg class="person" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3B4E7E"/><stop offset="1" stop-color="#22305A"/>
+              </linearGradient>
+            </defs>
+            <path d="M20 500c0-104 70-146 180-146s180 42 180 146z" fill="url(#skin)"/>
+            <rect x="168" y="270" width="64" height="100" rx="24" fill="#2C3D69"/>
+            <ellipse cx="200" cy="185" rx="78" ry="98" fill="#3B4E7E"/>
+            <path d="M122 170c0-62 34-92 80-92s78 30 76 90c-16-36-46-52-78-52s-60 16-78 54z" fill="#1B2748"/>
+          </svg>
+          <img class="photo" src="./photo.jpeg" alt="Portrait of Keerthan M Rao" width="720" height="1093">
+
+          <div class="bbox">
+            <span class="tag detect">detecting face</span>
+            <span class="tag match">match: Keerthan M Rao</span>
+            <i></i>
+            <div class="scan"></div>
+          </div>
+        </div>
+        <div class="log">
+          <div class="log-title"><span>attendance.csv</span><span>live</span></div>
+          <div class="log-row"><span>Keerthan M Rao</span><span id="logTime">09:14:02</span><span class="ok">Present</span></div>
+          <div class="log-saved">1 record saved to database</div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="section-head"><h2 id="about-title">Reliable apps start with well-shaped data.</h2></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I build things that take some input, process it properly and store the result somewhere it can be trusted. That is why I like databases: get the model right and everything built on top gets easier.</p>
+          <p>My projects so far cover the full loop, from live camera input to database records, and from console menus to files that stay consistent after every edit. I'm looking for a Software or Web Developer role where I can build data-backed applications and grow into full-stack work.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Focus</dt><dd>SQL, Python, OOP</dd></div>
+          <div><dt>Degree</dt><dd>B.E. ISE, 2026</dd></div>
+          <div><dt>Now</dt><dd>Intern at QSpiders</dd></div>
+          <div><dt>Speaks</dt><dd>4 languages</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="skills-title">What I work with</h2>
+        <p>Strong on the data side, comfortable with Python, and building up the web front end.</p>
+      </div>
+      <div class="skills">
+        <div class="skill-row">
+          <h3>Languages<small>Write and read daily</small></h3>
+          <ul class="chips"><li class="chip">Python</li><li class="chip">SQL</li><li class="chip">HTML</li><li class="chip">CSS</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Databases<small>Design and querying</small></h3>
+          <ul class="chips"><li class="chip">Relational databases (MySQL)</li><li class="chip mono">DDL</li><li class="chip mono">DML</li><li class="chip mono">DCL</li><li class="chip mono">TCL</li><li class="chip">Data modeling</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Application development<small>How I structure code</small></h3>
+          <ul class="chips"><li class="chip">Object-oriented programming</li><li class="chip">Modular system design</li><li class="chip">Data structures</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Libraries and tools<small>Day-to-day toolkit</small></h3>
+          <ul class="chips"><li class="chip">Pandas</li><li class="chip">NumPy</li><li class="chip">OpenCV</li><li class="chip">Git</li><li class="chip">GitHub</li></ul>
+        </div>
+        <div class="skill-row">
+          <h3>Concepts<small>Patterns I use often</small></h3>
+          <ul class="chips"><li class="chip">CRUD operations</li><li class="chip">File I/O (CSV, Excel, JSON)</li><li class="chip">Automated reporting in HTML</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" aria-labelledby="exp-title">
+    <div class="wrap">
+      <div class="section-head"><h2 id="exp-title">Experience</h2></div>
+      <div class="timeline">
+        <article class="job">
+          <div class="job-top">
+            <div>
+              <h3>Python with Data Science Intern</h3>
+              <p class="org">QSpiders, Bengaluru, Karnataka</p>
+            </div>
+            <p class="when">Jan 2026 to present</p>
+          </div>
+          <ul>
+            <li>Build and maintain Python data workflows with Pandas and NumPy, strengthening my scripting, logic building and handling of structured data. These skills carry straight over to backend development.</li>
+            <li>Practise structured problem-solving on varied datasets, which sharpens my debugging and keeps my development habits systematic.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" aria-labelledby="proj-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="proj-title">Projects</h2>
+        <p>Two applications that each take data in, process it and keep it consistent.</p>
+      </div>
+
+      <article class="project">
+        <div class="project-body">
+          <h3>Online attendance marking using facial recognition</h3>
+          <p class="year">2025</p>
+          <ul>
+            <li>A full application that captures live video, processes it in real time and writes the result to a persistent data layer. It covers the same input, processing and storage cycle as any full-stack system.</li>
+            <li>A centralized database records and retrieves attendance data, keeping it consistent and cutting administrative work.</li>
+            <li>Names and timestamps are logged automatically to Excel, CSV or SQL, which is practical CRUD-style data handling.</li>
+          </ul>
+          <ul class="chips"><li class="chip">Python</li><li class="chip">OpenCV</li><li class="chip">SQL</li><li class="chip">Excel / CSV</li></ul>
+        </div>
+        <div class="project-visual">
+          <div class="pipe" role="img" aria-label="Pipeline: live video input, real-time face processing, database record">
+            <div class="pipe-step"><b>Live video input</b><span>webcam frames</span></div>
+            <div class="pipe-link"></div>
+            <div class="pipe-step"><b>Real-time processing</b><span>OpenCV face recognition</span></div>
+            <div class="pipe-link"></div>
+            <div class="pipe-step"><b>Persistent storage</b><span>name + timestamp to SQL / Excel / CSV</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project flip">
+        <div class="project-body">
+          <h3>Student details management system</h3>
+          <p class="year">2025</p>
+          <ul>
+            <li>A console application to add, view, update and delete student records. Python file handling saves everything to text or CSV files, with no database needed.</li>
+            <li>Structured read and write operations store fields like name, roll number and marks, and rewrite the file accurately after every update or deletion.</li>
+            <li>Input validation and error handling for missing files and duplicate records keep the stored data consistent and reliable.</li>
+          </ul>
+          <ul class="chips"><li class="chip">Python</li><li class="chip">File handling</li><li class="chip">CSV / text</li></ul>
+        </div>
+        <div class="project-visual">
+          <div class="console" role="img" aria-label="Console menu with add, view, update and delete options and a sample record table">
+            <div class="console-bar"><i></i><i></i><i></i></div>
+            <div class="dim">Student Details Management</div>
+            <div>1  Add student</div>
+            <div>2  View students</div>
+            <div>3  Update student</div>
+            <div>4  Delete student</div>
+            <div><span class="dim">Enter choice:</span> <span class="in">2</span></div>
+            <table>
+              <thead><tr><th>Name</th><th>Roll no.</th><th>Marks</th></tr></thead>
+              <tbody>
+                <tr><td>Sample A</td><td>101</td><td>86</td></tr>
+                <tr><td>Sample B</td><td>102</td><td>91</td></tr>
+              </tbody>
+            </table>
+            <div class="dim" style="margin-top:8px">Sample data shown for illustration</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" aria-labelledby="edu-title">
+    <div class="wrap">
+      <div class="section-head"><h2 id="edu-title">Education</h2></div>
+      <div class="edu">
+        <div class="card">
+          <h3>Bapuji Institute of Engineering and Technology</h3>
+          <p class="sub">Bachelor of Engineering in Information Science and Engineering<br>2022 to 2026, Davangere, Karnataka</p>
+          <p class="cgpa"><strong>8.23</strong><span>CGPA</span></p>
+        </div>
+        <div class="card">
+          <h3 class="small">Languages I speak</h3>
+          <ul class="chips"><li class="chip">English</li><li class="chip">Hindi</li><li class="chip">Kannada</li><li class="chip">Tulu</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact-box">
+        <h2 id="contact-title">Let's build something reliable.</h2>
+        <p>I'm open to Software and Web Developer roles. Email is the quickest way to reach me.</p>
+        <div class="contact-links">
+          <a href="mailto:mraokeerthan66@gmail.com"><small>Email</small><span>mraokeerthan66@gmail.com</span></a>
+          <a href="tel:+919844057180"><small>Phone</small><span>+91 98440 57180</span></a>
+          <!-- Replace with your real LinkedIn profile URL -->
+          <a href="https://www.linkedin.com/in/keerthan-m-rao-aa5660337/?isSelfProfile=true" target="_blank" rel="noopener"><small>LinkedIn</small><span>Connect with me</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Keerthan M Rao</span>
+    <span>Davangere, Karnataka, India</span>
+  </div>
+</footer>
+
+<script>
+  // Theme toggle, with storage wrapped in try/catch in case it is unavailable
+  (function () {
+    var root = document.documentElement;
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+    } catch (e) {}
+    document.getElementById("themeBtn").addEventListener("click", function () {
+      var current = root.getAttribute("data-theme");
+      if (!current) current = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      var next = current === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  })();
+
+  // Live clock in the camera demo, and the same timestamp written to the log row
+  (function () {
+    var clock = document.getElementById("clock");
+    var logTime = document.getElementById("logTime");
+    function pad(n) { return String(n).padStart(2, "0"); }
+    function stamp(d) { return pad(d.getHours()) + ":" + pad(d.getMinutes()) + ":" + pad(d.getSeconds()); }
+    logTime.textContent = stamp(new Date());
+    clock.textContent = stamp(new Date());
+    setInterval(function () { clock.textContent = stamp(new Date()); }, 1000);
+  })();
+</script>
+</body>
+</html>
